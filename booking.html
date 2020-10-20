@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Booking &mdash; hairdoo</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/montserrat/montserrat-font.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/css/datatables.min.css">
+  <link rel="stylesheet" href="assets/modules/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/modules/css/select.bootstrap4.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+            <div class="search-result">
+              <div class="search-header">
+                Search
+              </div>
+              <div class="search-item">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+             
+            </div>
+          </div>
+        </form>
+        
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatar/avatar-5.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, Piter Minter</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Change Password
+              </a>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-sidebar">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html" class="logo-link"> <img src="assets/img/images/logo.svg" alt="logo" class="img-fluid img-logo" /> </a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">H</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+            <li><a class="nav-link" href="user.html"><i class="fas fa-user"></i> <span>User</span></a></li>
+            <li class="active"><a class="nav-link" href="booking.html"><i class="fas fa-book"></i> <span>Booking</span></a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+
+          <div class="section-header">
+            <h1>Booking</h1>
+            <div class="section-header-button">
+              <a href="#" class="btn btn-primary">Add New</a>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Booking</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped" id="table-2">
+                      <thead>
+                        <tr>
+                          <th class="text-center fixed-width-first">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="booking-group" data-checkbox-role="group_data_check" class="custom-control-input" id="checkbox-all">
+                              <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </th>
+                          <th>Services</th>
+                          <th>Progress</th>
+                          <th>Members</th>
+                          <th>Schedule Date</th>
+                          <th>Status</th>
+                          <th class="last-action-width">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="booking-group" class="custom-control-input" id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>MEN’S HAIRCUT</td>
+                          <td class="align-middle">
+                            <div class="progress" data-height="4" data-toggle="tooltip" title="100%">
+                              <div class="progress-bar bg-success" data-width="100%"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="member-images-div"> <img alt="image" src="assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Wildan Ahdian"> </div>
+                          </td>
+                          <td>2020-10-20</td>
+                          <td><div class="badge badge-success">Completed</div></td>
+                          <td class="last-action-width">
+                            <div class="action-div">
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" ><i class="fas fa-trash"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="booking-group" class="custom-control-input" id="checkbox-2">
+                              <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>MEN’S HAIRCUT</td>
+                          <td class="align-middle">
+                            <div class="progress" data-height="4" data-toggle="tooltip" title="80%">
+                              <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="member-images-div"> <img alt="image" src="assets/img/avatar/avatar-2.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Nur Alpiana"> </div>
+                          </td>
+                          <td>2020-10-10</td>
+                          <td><div class="badge badge-info">Arriving</div></td>
+                          <td class="last-action-width">
+                            <div class="action-div">
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" ><i class="fas fa-trash"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="booking-group" class="custom-control-input" id="checkbox-3">
+                              <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>MEN’S HAIRCUT</td>
+                          <td class="align-middle">
+                            <div class="progress" data-height="4" data-toggle="tooltip" title="70%">
+                              <div class="progress-bar bg-warning" data-width="70%"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="member-images-div"> <img alt="image" src="assets/img/avatar/avatar-6.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Nur Alpiana"> </div>
+                          </td>
+                          <td>2020-10-20</td>
+                          <td><div class="badge badge-warning">In Progress</div></td>
+                          <td class="last-action-width">
+                            <div class="action-div">
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" ><i class="fas fa-trash"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="booking-group" class="custom-control-input" id="checkbox-4">
+                              <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>MEN’S HAIRCUT</td>
+                          <td class="align-middle">
+                            <div class="progress" data-height="4" data-toggle="tooltip" title="100%">
+                              <div class="progress-bar bg-success" data-width="100%"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="member-images-div"> <img alt="image" src="assets/img/avatar/avatar-2.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Rizal Fakhri"> </div>
+                          </td>
+                          <td>2020-10-16</td>
+                          <td><div class="badge badge-success">Completed</div></td>
+                          <td class="last-action-width">
+                            <div class="action-div">
+                              <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                              <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" ><i class="fas fa-trash"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2020 <a href="index.html">hairdoo</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/js/jquery.min.js"></script>
+  <script src="assets/modules/js/popper.js"></script>
+  <script src="assets/modules/js/tooltip.js"></script>
+  <script src="assets/modules/js/bootstrap.min.js"></script>
+  <script src="assets/modules/js/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/js/moment.min.js"></script>
+  <script src="assets/js/hairdoo.js"></script>
+
+   <!-- JS Libraies -->
+   <script src="assets/modules/js/datatables.min.js"></script>
+   <script src="assets/modules/js/dataTables.bootstrap4.min.js"></script>
+   <script src="assets/modules/js/dataTables.select.min.js"></script>
+   <script src="assets/modules/js/jquery-ui.min.js"></script>
+ 
+   <!-- Page Specific JS File -->
+   <script src="assets/js/page/modules-datatables.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
