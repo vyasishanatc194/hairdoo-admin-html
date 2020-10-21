@@ -207,6 +207,10 @@ a.dropdown-item.active {
   line-height: 14px;
 }
 
+table.dataTable thead th.min-width-100 {
+  min-width: 100px;
+}
+
 @media screen and (min-width: 1025px) {
   .main-sidebar .sidebar-brand {
     height: 70px;
@@ -237,11 +241,50 @@ a.dropdown-item.active {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-wrapper-1 .section .section-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .navbar .nav-link {
+    padding-left: 0 !important;
+  }
+  .navbar .nav-link.nav-link-user {
+    padding-right: 0 !important;
+  }
+  .section .section-header .section-header-back .btn.btn-icon {
+    padding: 0;
+    background-color: #fff;
+  }
+  .section .section-header .section-header-back .btn.btn-icon:hover {
+    color: #000;
+    background-color: #fff;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card .card-header,
+  .card .card-body,
+  .card .card-footer {
+    background-color: transparent;
+    padding: 20px 20px;
+  }
   .table .last-action-width {
     width: 150px !important;
+  }
+  table.dataTable thead th .custom-checkbox.custom-control {
+    padding-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    min-width: 65px;
+  }
+  .table:not(.table-sm) thead th {
+    min-width: 70px;
   }
 }
 
