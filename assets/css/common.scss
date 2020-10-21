@@ -213,19 +213,19 @@ a.dropdown-item.active {
 }
 
 .section {
-	.section-header {
-		.section-header-back {
-			.btn.btn-icon {
+  .section-header {
+    .section-header-back {
+      .btn.btn-icon {
         display: flex;
         font-style: inherit;
         justify-content: center;
         align-items: center;
         min-height: 31px;
 
-				&:hover {
-					background-color: #000;
+        &:hover {
+          background-color: #000;
         }
-        
+
         i {
           font-size: 16px;
           display: flex;
@@ -233,9 +233,9 @@ a.dropdown-item.active {
           padding: 0;
           line-height: 14px;
         }
-			}
-		}
-	}
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
