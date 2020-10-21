@@ -64,15 +64,15 @@ body {
   }
 
   .section-title {
-    &:before {
-      background-color: #000000;
+    &::before {
+      background-color: #000;
     }
   }
 }
 
 body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
-  box-shadow: 0 4px 8px #0000002e;
-  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  background-color: #000;
   color: #fff;
 }
 
