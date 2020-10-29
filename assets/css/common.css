@@ -211,6 +211,166 @@ table.dataTable thead th.min-width-100 {
   min-width: 100px;
 }
 
+.custom-active-inactive-group .selectgroup {
+  max-width: 370px;
+}
+
+.custom-active-inactive-group .selectgroup label.selectgroup-item {
+  margin: 0;
+}
+
+.custom-active-inactive-group .selectgroup label.selectgroup-item .selectgroup-button {
+  padding: 2px 1rem;
+  height: 42px;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.custom-active-inactive-group .selectgroup label.selectgroup-item .selectgroup-input:focus + .selectgroup-button,
+.custom-active-inactive-group .selectgroup label.selectgroup-item .selectgroup-input:checked + .selectgroup-button {
+  background-color: #000;
+  border-color: #000;
+}
+
+.user-view-card-common .tickets .ticket-content {
+  width: 100%;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail {
+  padding: 5px 0 5px 0;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-title h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-title h4 .rating-star-badge {
+  font-size: 12px;
+  padding: 4px 8px 3px 8px;
+  line-height: 14px;
+  margin: -3px 0 0 5px;
+  display: inline-block;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .text-date-code {
+  color: #3dad4c !important;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-description {
+  color: #111;
+  margin-top: 15px;
+}
+
+.user-view-card-common .tickets .ticket-content .ticket-description p {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 1200px;
+}
+
+.table-view-root-div {
+  padding: 0;
+  margin: 0;
+}
+
+.table-view-root-div .width-20 {
+  width: 20%;
+}
+
+.table-view-root-div .width-40 {
+  width: 40%;
+}
+
+.table-view-root-div .width-30 {
+  width: 30%;
+}
+
+.table-view-root-div .badge.custom-badge {
+  border-radius: 0px;
+  min-width: 80px;
+}
+
+.table-view-root-div span.title-td-span01 {
+  min-width: 100px;
+  display: inline-block;
+}
+
+.daterangepicker .btn-success,
+.daterangepicker .btn-success.disabled {
+  -webkit-box-shadow: 0 2px 6px #5d6df566;
+          box-shadow: 0 2px 6px #5d6df566;
+  background-color: #5d6df5;
+  border-color: #5d6df5;
+  color: #fff;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #000000;
+}
+
+.daterangepicker.single.ltr .ranges,
+.daterangepicker.single.ltr .calendar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 5px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daterangepicker.ltr .left .daterangepicker_input {
+  padding-right: 12px;
+}
+
+.daterangepicker .calendar-time {
+  padding-left: 0;
+}
+
+.mlr-6 {
+  margin-right: -6px;
+  margin-left: -6px;
+}
+
+.plr-6 {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.card-footer.background-color-footer {
+  background-color: #fafafa !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.heading-text-div h2 {
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  color: #000;
+}
+
 @media screen and (min-width: 1025px) {
   .main-sidebar .sidebar-brand {
     height: 70px;
@@ -265,6 +425,25 @@ table.dataTable thead th.min-width-100 {
     color: #000;
     background-color: #fff;
   }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .bullet {
+    display: none;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .text-address {
+    display: block;
+    margin: 0 0 5px 0;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .text-address .text-block {
+    display: block;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-description p {
+    font-size: 13px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -285,6 +464,50 @@ table.dataTable thead th.min-width-100 {
   }
   .table:not(.table-sm) thead th {
     min-width: 70px;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .bullet {
+    display: none;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .text-address {
+    display: block;
+    margin: 0 0 5px 0;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .text-address .text-block {
+    display: block;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-description p {
+    font-size: 13px;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-header .ticket-detail .ticket-info .bullet {
+    display: none;
+  }
+  .user-view-card-common .tickets .ticket-content .ticket-description p {
+    font-size: 13px;
+  }
+  .table-view-root-div .last-th-price {
+    min-width: 200px;
+  }
+  .table-view-root-div span.title-td-span01 {
+    min-width: 75px;
+    font-size: 13px;
+  }
+  .table-view-root-div .badge.custom-badge {
+    border-radius: 0px;
+    min-width: 55px;
+    font-size: 10px;
+    padding: 7px 7px;
   }
 }
 
